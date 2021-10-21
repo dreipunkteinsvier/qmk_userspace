@@ -1,0 +1,17 @@
+{
+	"author": "",
+	"documentation": "Wrapper based keymap",
+	"keyboard": "reviung41",
+	"keymap": "dreipunkteinsvier",
+	"layout": "_41key_wrapper",
+	"layers": [
+		[ "_REVIUNG_BASE" ],
+		[ "_REVIUNG_NAV" ],
+		[ "_REVIUNG_NUM" ],
+		[ "_REVIUNG_SYM" ],
+		[ "_REVIUNG_FUN" ],
+		[ "_REVIUNG_MOUSE" ]
+	],
+	"notes": "",
+	"version": 1
+}

@@ -1,0 +1,68 @@
+/* Copyright (C) 2021 @dreipunkteinsvier
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#pragma once
+
+#include "wrappers.h"
+
+#define __BLANK_4_________________________ _______, _______, _______, _______
+#define __BLANK_3________________ _______, _______, _______
+#define __BLANK_2_______ _______, _______
+
+#define __QWERTY_L1________________________________ KC_Q,    KC_W,    KC_E,    KC_R,    KC_T
+#define __QWERTY_L2________________________________ KC_A,    KC_S,    KC_D,    KC_F,    KC_G
+#define __QWERTY_L2_GACS___________________________ HM_A,    HM_S,    HM_D,    HM_F,    KC_G
+#define __QWERTY_L3________________________________ KC_Z,    KC_X,    KC_C,    KC_V,    KC_B
+#define __QWERTY_L3_A______________________________ KC_Z,    HM_X,    KC_C,    KC_V,    KC_B
+
+#define __QWERTY_R1________________________________ KC_Y,    KC_U,    KC_I,    KC_O,    KC_P
+#define __QWERTY_R2________________________________ KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN
+#define __QWERTY_R2_SCAG___________________________ KC_H,    HM_J,    HM_K,    HM_L,    HM_SCLN
+#define __QWERTY_R3________________________________ KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLASH
+#define __QWERTY_R3_A______________________________ KC_N,    KC_M,    KC_COMM, HM_DOT,  KC_SLASH
+
+#define __3_KEY_L4_________________________________ LT(MEDIA, KC_ESC), LT(NAV, KC_TAB), LT(MOUSE, KC_ENT)
+#define __3_KEY_R4_________________________________ LT(SYM, KC_SPC), LT(NUM, KC_BSPC), LT(FUNC, KC_DEL)
+
+#define __GACS_L2_________________________ KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT
+#define __SCAG_R2_________________________ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI
+
+#define __NAV_R1__________________________ LCTL(KC_LEFT), LCTL(KC_DOWN), LCTL(KC_UP), LCTL(KC_RGHT)
+#define __NAV_R2__________________________ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+#define __NAV_R3__________________________ KC_HOME, KC_PGDN, KC_PGUP, KC_END
+
+#define __MOUSE_R2________________________ KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R
+#define __MOUSE_R3________________________ KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R
+#define __MOUSE_R4_______________ KC_BTN1, KC_BTN3, KC_BTN2
+
+#define __MEDIA_R1_________________________________ RGB_TOG, RGB_MOD,  RGB_HUI, RGB_SAI, RGB_VAI
+#define __MEDIA_R2_________________________________ RGB_M_P, RGB_RMOD, RGB_HUD, RGB_SAD, RGB_VAD
+#define __MEDIA_R3_________________________________ _______, KC_MUTE,  KC_VOLD, KC_VOLU, _______
+
+#define __NUM_L1___________________________________ KC_MINS, KC_7,    KC_8,    KC_9,     KC_0
+#define __NUM_L2___________________________________ KC_EQL,  KC_4,    KC_5,    KC_6,     KC_QUOT
+#define __NUM_L3___________________________________ KC_GRV,  KC_1,    KC_2,    KC_3,     KC_BSLS
+
+#define __SYM_L1___________________________________ KC_UNDS, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN
+#define __SYM_L2___________________________________ KC_PLUS, KC_DLR,  KC_PERC, KC_CIRC, KC_DQUO
+#define __SYM_L3___________________________________ KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_PIPE
+
+#define __FUN_L1___________________________________ KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR
+#define __FUN_L2___________________________________ KC_F11,  KC_F4,   KC_F5,   KC_F6,   KC_INS
+#define __FUN_L3___________________________________ KC_F10,  KC_F1,   KC_F2,   KC_F3,   _______
+
+
+#define __3_KEY_THUMBS___________ LT(REV_NAV, KC_TAB), LT(REV_SYM, KC_SPC), LT(REV_NUM, KC_BSPC)

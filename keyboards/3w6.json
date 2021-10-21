@@ -1,0 +1,18 @@
+{
+	"author": "",
+	"documentation": "Wrapper based keymap",
+	"keyboard": "3w6/rev2",
+	"keymap": "dreipunkteinsvier",
+	"layout": "_36key_wrapper",
+	"layers": [
+		[ "S42_36(_BASE)" ],
+		[ "S42_36(_NAV)" ],
+		[ "S42_36(_MOUSE)" ],
+		[ "S42_36(_MEDIA)" ],
+		[ "S42_36(_NUM)" ],
+		[ "S42_36(_SYM)" ],
+		[ "S42_36(_FUN)" ]
+	],
+	"notes": "",
+	"version": 1
+}
