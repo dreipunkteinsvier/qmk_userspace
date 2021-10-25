@@ -39,7 +39,7 @@ ifeq ($(KEYBOARD), crkbd/rev1)
 	# ifneq ($(strip $(OLED)),)
 		OLED_ENABLE = yes
 		# WPM_ENABLE = yes
-		SRC += oled-bob.c
+		SRC += oled.c
 	# endif
 endif
 
