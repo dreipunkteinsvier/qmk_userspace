@@ -50,7 +50,7 @@
 
 #define __MEDIA_R1_________________________________ RGB_TOG, RGB_MOD,  RGB_HUI, RGB_SAI, RGB_VAI
 #define __MEDIA_R2_________________________________ RGB_M_P, RGB_RMOD, RGB_HUD, RGB_SAD, RGB_VAD
-#define __MEDIA_R3_________________________________ _______, KC_MUTE,  KC_VOLD, KC_VOLU, _______
+#define __MEDIA_R3_________________________________ _______, KC_MUTE,  KC_VOLD, KC_VOLU, RESET
 
 #define __NUM_L1___________________________________ KC_MINS, KC_7,    KC_8,    KC_9,     KC_0
 #define __NUM_L2___________________________________ KC_EQL,  KC_4,    KC_5,    KC_6,     KC_QUOT
