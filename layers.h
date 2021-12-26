@@ -34,8 +34,8 @@
 #define __QWERTY_R3________________________________ KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLASH
 #define __QWERTY_R3_A______________________________ KC_N,    KC_M,    KC_COMM, HM_DOT,  KC_SLASH
 
-#define __3_KEY_L4_________________________________ LT(MEDIA, KC_ESC), LT(NAV, KC_TAB), LT(MOUSE, KC_ENT)
-#define __3_KEY_R4_________________________________ LT(SYM, KC_SPC), LT(NUM, KC_BSPC), LT(FUNC, KC_DEL)
+#define __3_KEY_L4_________________________________ KC_ESC, LT(MEDIA, KC_TAB), LT(NAV, KC_ENT)
+#define __3_KEY_R4_________________________________ LT(NUM, KC_SPC), LT(FUNC, KC_BSPC), KC_DEL
 
 #define __GACS_L2_________________________ KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT
 #define __SCAG_R2_________________________ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI
