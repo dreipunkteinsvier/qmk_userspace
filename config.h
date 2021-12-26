@@ -19,7 +19,7 @@
 // Key and layout wrapper macros
 #include "wrappers.h"
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 180
 #define IGNORE_MOD_TAP_INTERRUPT
 // #define TAPPING_FORCE_HOLD // surpress hold function of tap key
 // #define PERMISSIVE_HOLD // trigger mod when second key is pressed even before tapping term is over
