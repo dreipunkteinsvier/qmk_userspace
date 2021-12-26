@@ -102,10 +102,11 @@ static void render_rein_geguckt(void) {
   oled_write_raw_P(rein_geguckt, sizeof(rein_geguckt));
 }
 
-void oled_task_user(void) {
+bool oled_task_user(void) {
   if (is_keyboard_master()) {
     render_rein_geguckt();
   } else {
     render_pi_bob();
   }
+  return false;
 }
