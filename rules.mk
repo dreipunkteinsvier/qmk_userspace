@@ -42,8 +42,3 @@ ifeq ($(KEYBOARD), crkbd/rev1)
 		SRC += oled.c
 	# endif
 endif
-
-# Reviung41
-ifeq ($(KEYBOARD), reviung41)
-	RGBLIGHT_ENABLE = yes
-endif

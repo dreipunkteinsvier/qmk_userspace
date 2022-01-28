@@ -63,6 +63,3 @@
 #define __FUN_L1___________________________________ KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR
 #define __FUN_L2___________________________________ KC_F11,  KC_F4,   KC_F5,   KC_F6,   KC_CAPS
 #define __FUN_L3___________________________________ KC_F10,  KC_F1,   KC_F2,   KC_F3,   KC_INS
-
-
-#define __3_KEY_THUMBS___________ LT(REV_NAV, KC_TAB), LT(REV_SYM, KC_SPC), LT(REV_NUM, KC_BSPC)
