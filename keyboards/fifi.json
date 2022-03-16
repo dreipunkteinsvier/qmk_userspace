@@ -7,10 +7,8 @@
 	"layers": [
 		[ "_BASE" ],
 		[ "_NAV" ],
-		[ "_MOUSE" ],
 		[ "_MEDIA" ],
 		[ "_NUM" ],
-		[ "_SYM" ],
 		[ "_FUN" ]
 	],
 	"notes": "",

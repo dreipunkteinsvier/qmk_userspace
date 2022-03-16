@@ -37,16 +37,15 @@
 #define __3_KEY_L4_________________________________ KC_ESC, LT(MEDIA, KC_TAB), LT(NAV, KC_ENT)
 #define __3_KEY_R4_________________________________ LT(NUM, KC_SPC), LT(FUNC, KC_BSPC), KC_DEL
 
+#define __2_KEY_L4________________________ LT(MEDIA, KC_TAB), LT(NAV, KC_ENT)
+#define __2_KEY_R4________________________ LT(NUM, KC_SPC), LT(FUNC, KC_BSPC)
+
 #define __GACS_L2_________________________ KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT
 #define __SCAG_R2_________________________ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI
 
 #define __NAV_R1__________________________ LCTL(KC_LEFT), LCTL(KC_DOWN), LCTL(KC_UP), LCTL(KC_RGHT)
 #define __NAV_R2__________________________ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
 #define __NAV_R3__________________________ KC_HOME, KC_PGDN, KC_PGUP, KC_END
-
-#define __MOUSE_R2________________________ KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R
-#define __MOUSE_R3________________________ KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R
-#define __MOUSE_R4_______________ KC_BTN1, KC_BTN3, KC_BTN2
 
 #define __MEDIA_R1_________________________________ RGB_TOG, RGB_MOD,  RGB_HUI, RGB_SAI, RGB_VAI
 #define __MEDIA_R2_________________________________ RGB_M_P, RGB_RMOD, RGB_HUD, RGB_SAD, RGB_VAD

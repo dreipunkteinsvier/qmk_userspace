@@ -22,7 +22,6 @@ SPACE_CADET_ENABLE = no
 # Common features
 LTO_ENABLE = yes
 EXTRAKEY_ENABLE = yes
-MOUSEKEY_ENABLE = yes
 BOOTLOADER = atmel-dfu
 BOOTMAGIC_ENABLE = no
 COMBO_ENABLE = yes
