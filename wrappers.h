@@ -97,10 +97,10 @@
 	                           __BLANK_3________________,     __BLANK_3________________
 
 // 42-key 3x6_3
-#define _42key_wrapper(...) LAYOUT_split_3x6_3(__VA_ARGS__)
+#define LAYOUT_42key_wrapper(...) LAYOUT_split_3x6_3(__VA_ARGS__)
 
 // 36-key split 3x5_3
-#define _36key_wrapper(...) LAYOUT(__VA_ARGS__)
+#define LAYOUT_36key_wrapper(...) LAYOUT(__VA_ARGS__)
 // 42-key to 36-key layout conversion
 #define S42_36(k) SPLIT_3x6_3_TO_3x5_3(k)
 #define SPLIT_3x6_3_TO_3x5_3( \
@@ -115,7 +115,7 @@
 	               k37, k38, k39, k40, k41, k42
 
 // 34-key split 3x5_2
-#define _34key_wrapper(...) LAYOUT(__VA_ARGS__)
+#define LAYOUT_34key_wrapper(...) LAYOUT(__VA_ARGS__)
 // 42-key to 34-key layout conversion
 #define S42_34(k) SPLIT_3x6_3_TO_3x5_2(k)
 #define SPLIT_3x6_3_TO_3x5_2( \
@@ -132,4 +132,43 @@
 /*
  * === chiffre land ===
  */
+
+#define _uniBASE \
+	__QWERTY_L1________________________________,	KC_MUTE,	__QWERTY_R1________________________________,	\
+	__QWERTY_L2_GACS___________________________,				__QWERTY_R2_SCAG___________________________,	\
+	__QWERTY_L3_A______________________________,				__QWERTY_R3_A______________________________,	\
+							   __2_KEY_L4______,				__2_KEY_R4______
+
+
+#define _uniNAV \
+	__BLANK_4_________________________, KC_LCBR,	KC_TRNS,	KC_RCBR, __NAV_R1__________________________, \
+	__GACS_L2_________________________, KC_LPRN,				KC_RPRN, __NAV_R2__________________________, \
+	_______, KC_RALT, __BLANK_2_______, KC_LBRC,				KC_RBRC, __NAV_R3__________________________, \
+	                           __BLANK_2_______,				__BLANK_2_______
+
+#define _uniMEDIA \
+	__BLANK_4_________________________, _______,	KC_TRNS,	__MEDIA_R1_________________________________, \
+	__GACS_L2_________________________, _______,				__MEDIA_R2_________________________________, \
+	_______, KC_RALT, __BLANK_2_______, _______,				__MEDIA_R3_________________________________, \
+	                           __BLANK_2_______,				__BLANK_2_______
+
+#define _uniNUM \
+	__NUM_L1___________________________________,	KC_TRNS,	_______, __BLANK_4_________________________, \
+	__NUM_L2___________________________________,				_______, __SCAG_R2_________________________, \
+	__NUM_L3___________________________________,				_______, __BLANK_2_______, KC_RALT, _______, \
+	                           __BLANK_2_______,				__BLANK_2_______
+
+#define _uniSYM \
+	__SYM_L1___________________________________,	KC_TRNS,	__MEDIA_R1_________________________________, \
+	__SYM_L2___________________________________,				__MEDIA_R2_________________________________, \
+	__SYM_L3___________________________________,				__MEDIA_R3_________________________________, \
+	                           __BLANK_2_______,				__BLANK_2_______
+
+#define _uniFUN \
+	__FUN_L1___________________________________,	KC_TRNS,	_______, __BLANK_4_________________________, \
+	__FUN_L2___________________________________,				_______, __SCAG_R2_________________________, \
+	__FUN_L3___________________________________,				_______, __BLANK_2_______, KC_RALT, _______, \
+	                           __BLANK_2_______,				__BLANK_2_______
+
+#define LAYOUT_chiffre_wrapper(...) LAYOUT(__VA_ARGS__)
 

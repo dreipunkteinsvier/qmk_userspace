@@ -3,7 +3,7 @@
 	"documentation": "Wrapper based keymap",
 	"keyboard": "crkbd/rev1",
 	"keymap": "dreipunkteinsvier",
-	"layout": "_42key_wrapper",
+	"layout": "LAYOUT_42key_wrapper",
 	"layers": [
 		[ "_BASE" ],
 		[ "_NAV" ],

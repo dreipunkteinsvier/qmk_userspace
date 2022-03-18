@@ -37,8 +37,8 @@
 #define __3_KEY_L4_________________________________ KC_ESC, LT(MEDIA, KC_TAB), LT(NAV, KC_ENT)
 #define __3_KEY_R4_________________________________ LT(NUM, KC_SPC), LT(FUNC, KC_BSPC), KC_DEL
 
-#define __2_KEY_L4________________________ LT(MEDIA, KC_TAB), LT(NAV, KC_ENT)
-#define __2_KEY_R4________________________ LT(NUM, KC_SPC), LT(FUNC, KC_BSPC)
+#define __2_KEY_L4______ LT(MEDIA, KC_TAB), LT(NAV, KC_ENT)
+#define __2_KEY_R4______ LT(NUM, KC_SPC), LT(FUNC, KC_BSPC)
 
 #define __GACS_L2_________________________ KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT
 #define __SCAG_R2_________________________ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI

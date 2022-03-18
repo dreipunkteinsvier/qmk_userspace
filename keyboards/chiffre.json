@@ -1,0 +1,17 @@
+{
+	"author": "",
+	"documentation": "Wrapper based keymap",
+	"keyboard": "tominabox1/le_chiffre",
+	"keymap": "dreipunkteinsvier",
+	"layout": "LAYOUT_chiffre_wrapper",
+	"layers": [
+		["_uniBASE"],
+		["_uniNAV"],
+		["_uniMEDIA"],
+		["_uniNUM"],
+		["_uniSYM"],
+		["_uniFUN"]
+	],
+	"notes": "",
+	"version": 1
+}
