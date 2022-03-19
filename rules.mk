@@ -38,6 +38,13 @@ ifeq ($(KEYBOARD), crkbd/rev1)
 	# ifneq ($(strip $(OLED)),)
 		OLED_ENABLE = yes
 		# WPM_ENABLE = yes
-		SRC += oled.c
+		SRC += split_oled.c
 	# endif
+endif
+
+# le chiffre
+ifeq ($(KEYBOARD), tominabox1/le_chiffre)
+	ENCODER_ENABLE = yes
+	OLED_ENABLE = yes
+	SRC += oled.c
 endif

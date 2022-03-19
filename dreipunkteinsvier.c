@@ -45,3 +45,16 @@ bool process_record_user(uint16_t const keycode, keyrecord_t *record) {
 
 	return true; // Continue with unmatched keycodes
 }
+
+#ifdef ENCODER_ENABLE
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    if (index == 0) {
+        if (clockwise) {
+            tap_code(KC_VOLU);
+        } else {
+            tap_code(KC_VOLD);
+        }
+    }
+    return true;
+}
+#endif

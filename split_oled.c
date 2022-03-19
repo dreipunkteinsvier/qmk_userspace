@@ -18,7 +18,11 @@
 #include <stdio.h>
 
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
-  return OLED_ROTATION_180;
+// not necessary for small displays with orientation like corne
+//   if (!is_keyboard_master()) {
+//     return OLED_ROTATION_180;  // flips the display 180 degrees if offhand
+//   }
+  return rotation;
 }
 
 
@@ -99,9 +103,10 @@ static void render_rein_geguckt(void) {
 }
 
 bool oled_task_user(void) {
-  if (false) {
+  if (is_keyboard_master()) {
     render_rein_geguckt();
+  } else {
+    render_pi_bob();
   }
-  render_pi_bob();
   return false;
 }
