@@ -1,0 +1,13 @@
+{
+	"author": "",
+	"documentation": "Wrapper based keymap",
+	"keyboard": "hhkb/ansi",
+	"keymap": "dreipunkteinsvier",
+	"layout": "LAYOUT_hhkb_wrapper",
+	"layers": [
+		["_hhkbBASE"],
+		["_hhkbRAISE"]
+	],
+	"notes": "",
+	"version": 1
+}

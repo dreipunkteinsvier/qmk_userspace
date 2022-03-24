@@ -46,5 +46,5 @@ endif
 ifeq ($(KEYBOARD), tominabox1/le_chiffre)
 	ENCODER_ENABLE = yes
 	OLED_ENABLE = yes
-	SRC += oled.c
+	SRC += chiffre_oled.c
 endif

@@ -19,6 +19,7 @@
 // Key and layout wrapper macros
 #include "wrappers.h"
 
+#undef TAPPING_TERM
 #define TAPPING_TERM 180
 #define IGNORE_MOD_TAP_INTERRUPT
 // #define TAPPING_FORCE_HOLD // surpress hold function of tap key
