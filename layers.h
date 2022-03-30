@@ -67,11 +67,17 @@
 #define __HHKB_BASE_ROW1___________________________ KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSLS, KC_GRV
 #define __HHKB_BASE_ROW2___________________________ KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSPC
 #define __HHKB_BASE_ROW3___________________________ KC_LCTL, HM_A, HM_S, HM_D, HM_F, KC_G, KC_H, HM_J, HM_K, HM_L, HM_SCLN, KC_QUOT, KC_ENT
-#define __HHKB_BASE_ROW4___________________________ KC_LSFT, KC_Z, HM_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, HM_DOT, KC_SLSH, KC_RSFT, MO(NAV)
-#define __HHKB_BASE_ROW5___________________________ KC_LGUI, KC_LALT,  LT(NAV, KC_SPC), KC_RALT, KC_APP
+#define __HHKB_BASE_ROW4___________________________ KC_LSFT, KC_Z, HM_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, HM_DOT, KC_SLSH, KC_RSFT, MO(RAISE)
+#define __HHKB_BASE_ROW5___________________________ KC_LGUI, KC_LALT,  LT(LOWER, KC_SPC), KC_RALT, KC_APP
 
-#define __HHKB_RAISE_ROW1__________________________ _______, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_INS, KC_DEL
-#define __HHKB_RAISE_ROW2__________________________ _______, _______, _______, _______, RESET, _______, _______, _______, _______, _______, KC_PSCR, KC_UP, _______, KC_DEL
-#define __HHKB_RAISE_ROW3__________________________ _______, _______, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_LEFT, KC_RGHT, _______
-#define __HHKB_RAISE_ROW4__________________________ _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_VOLD, KC_VOLU, _______, _______
+#define __HHKB_RAISE_ROW1__________________________ _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12,  KC_INS,  KC_DEL
+#define __HHKB_RAISE_ROW2__________________________ _______, _______, _______, _______,   RESET, _______, _______, _______, _______, _______, KC_PSCR,   KC_UP, _______,  KC_DEL
+#define __HHKB_RAISE_ROW3__________________________ _______, _______, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP,  KC_END, KC_LEFT, KC_RGHT, _______
+#define __HHKB_RAISE_ROW4__________________________ _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_VOLD, KC_VOLU, KC_DOWN, _______, _______
 #define __HHKB_RAISE_ROW5__________________________ _______, _______, _______, _______, _______
+
+#define __HHKB_LOWER_ROW1__________________________ _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12,  KC_INS,  KC_DEL
+#define __HHKB_LOWER_ROW2__________________________ _______, _______, _______, _______, _______, KC_LCBR, KC_RCBR, __NAV_R1__________________________,   KC_UP, _______,  KC_DEL
+#define __HHKB_LOWER_ROW3__________________________ _______, _______, _______, _______, _______, KC_LPRN, KC_RPRN, __NAV_R2__________________________, _______, _______
+#define __HHKB_LOWER_ROW4__________________________ _______, _______, _______, _______, _______, KC_LBRC, KC_RBRC, __NAV_R3__________________________, _______, _______
+#define __HHKB_LOWER_ROW5__________________________ _______, _______, _______, _______, _______

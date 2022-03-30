@@ -6,7 +6,8 @@
 	"layout": "LAYOUT_hhkb_wrapper",
 	"layers": [
 		["_hhkbBASE"],
-		["_hhkbRAISE"]
+		["_hhkbRAISE"],
+		["_hhkbLOWER"]
 	],
 	"notes": "",
 	"version": 1

@@ -169,6 +169,8 @@
 /*
  * === hhkb land ===
  */
+#define RAISE 1
+#define LOWER 2
 
 #define _hhkbBASE \
 	__HHKB_BASE_ROW1___________________________, \
@@ -183,5 +185,12 @@
 	__HHKB_RAISE_ROW3__________________________, \
 	__HHKB_RAISE_ROW4__________________________, \
 	__HHKB_RAISE_ROW5__________________________
+
+#define _hhkbLOWER \
+	__HHKB_LOWER_ROW1__________________________, \
+	__HHKB_LOWER_ROW2__________________________, \
+	__HHKB_LOWER_ROW3__________________________, \
+	__HHKB_LOWER_ROW4__________________________, \
+	__HHKB_LOWER_ROW5__________________________
 	
 #define LAYOUT_hhkb_wrapper(...) LAYOUT(__VA_ARGS__)
