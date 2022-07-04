@@ -17,4 +17,3 @@ COMB(MOD_ESC,   KC_ESC,     HM_D, HM_S)
 //   name       result      chord keys
 COMB(CTRLC,     LCTL(KC_C), KC_Z, KC_X, KC_C, KC_V)
 COMB(LOCK,      LGUI(KC_L), KC_M, KC_COMM, HM_DOT, KC_SLASH)
-COMB(CAPSL,     KC_CAPS,    HM_F, HM_J)

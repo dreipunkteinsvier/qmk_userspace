@@ -26,6 +26,8 @@ BOOTLOADER = atmel-dfu
 BOOTMAGIC_ENABLE = no
 COMBO_ENABLE = yes
 SRC += combos.c
+CAPS_WORD_ENABLE = yes
+
 
 # Main source file
 SRC += dreipunkteinsvier.c

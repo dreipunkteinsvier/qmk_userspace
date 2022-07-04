@@ -27,7 +27,7 @@
 #define HM_S	LALT_T(KC_S)
 #define HM_D	LCTL_T(KC_D)
 #define HM_F	LSFT_T(KC_F)
-#define HM_J	LSFT_T(KC_J)
+#define HM_J	RSFT_T(KC_J)
 #define HM_K	LCTL_T(KC_K)
 #define HM_L	LALT_T(KC_L)
 #define HM_SCLN LGUI_T(KC_SCLN)

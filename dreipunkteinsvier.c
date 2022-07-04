@@ -16,34 +16,26 @@
 
 #include "dreipunkteinsvier.h"
 
-// Toggle caps lock following a word
-static void process_caps_word(uint16_t keycode, keyrecord_t *record) {
-	// Get base key code from mod tap
-	if (record->tap.count &&
-		((QK_MOD_TAP < keycode && keycode < QK_MOD_TAP_MAX) ||
-		(QK_LAYER_TAP < keycode && keycode < QK_LAYER_TAP_MAX))
-	) { keycode &= 0x00FF; }
+bool caps_word_press_user(uint16_t keycode) {
+  switch (keycode) {
+    // Keycodes that continue Caps Word, with shift applied.
+    case KC_A ... KC_Z:
+      add_weak_mods(MOD_BIT(KC_LSFT));  // Apply shift to the next key.
+      return true;
 
-	// Deactivate caps lock with listed keycodes
-	switch (keycode) {
-		case KC_TAB:
-		case KC_ESC:
-		case KC_SPC:
-		case KC_ENT:
-		case KC_DOT:
-		case KC_EQL:
-		case KC_GESC:
-			tap_code(KC_CAPS);
-	}
-}
+    // Keycodes that continue Caps Word, without shifting.
+    case KC_1 ... KC_0:
+    case KC_BSPC:
+    case KC_DEL:
+    case KC_MINS:
+    case KC_UNDS:
+    case KC_LSFT:
+    case KC_RSFT:
+      return true;
 
-bool process_record_user(uint16_t const keycode, keyrecord_t *record) {
-    
-	if (record->event.pressed) {
-		if (host_keyboard_led_state().caps_lock) { process_caps_word(keycode, record); }
-	}
-
-	return true; // Continue with unmatched keycodes
+    default:
+      return false;  // Deactivate Caps Word.
+  }
 }
 
 #ifdef ENCODER_ENABLE
