@@ -7,13 +7,8 @@ COMB(UML_OE,   RALT(KC_P),   KC_O, HM_L)
 
 // horizontal combos for mods
 //   name       result      chord keys
-COMB(MOD_DEL,   KC_DEL,     KC_H, HM_J)
+COMB(MOD_DEL,   KC_DEL,     HM_H, HM_J)
 COMB(MOD_BSPC,  KC_BSPC,    HM_J, HM_K)
 COMB(MOD_ENT,   KC_ENT,     HM_K, HM_L)
 COMB(MOD_TAB,   KC_TAB,     HM_F, HM_D)
 COMB(MOD_ESC,   KC_ESC,     HM_D, HM_S)
-
-// combos for convenience
-//   name       result      chord keys
-COMB(CTRLC,     LCTL(KC_C), KC_Z, KC_X, KC_C, KC_V)
-COMB(LOCK,      LGUI(KC_L), KC_M, KC_COMM, HM_DOT, KC_SLASH)

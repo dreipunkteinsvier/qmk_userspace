@@ -16,23 +16,42 @@
 
 #pragma once
 
-#include "wrappers.h"
+// Home row mod tap macros
+#define HM_A	LGUI_T(KC_A)
+#define HM_S	LALT_T(KC_S)
+#define HM_D	LCTL_T(KC_D)
+#define HM_F	LSFT_T(KC_F)
+#define HM_G	RALT_T(KC_G)
+#define HM_H	RALT_T(KC_H)
+#define HM_J	RSFT_T(KC_J)
+#define HM_K	LCTL_T(KC_K)
+#define HM_L	LALT_T(KC_L)
+#define HM_SCLN LGUI_T(KC_SCLN)
+#define HM_ESC	LCTL_T(KC_ESC)
+#define GACS(k1,k2,k3,k4) GUI_T(k1),ALT_T(k2),CTL_T(k3),SFT_T(k4)
+#define SCAG(k1,k2,k3,k4) SFT_T(k1),CTL_T(k2),ALT_T(k3),GUI_T(k4)
 
+// layer names
+#define BASE 0
+#define NAV 1
+#define MEDIA 2
+#define NUM 3
+#define FUNC 4
+
+// layer strip
 #define __BLANK_4_________________________ _______, _______, _______, _______
 #define __BLANK_3________________ _______, _______, _______
 #define __BLANK_2_______ _______, _______
 
 #define __QWERTY_L1________________________________ KC_Q,    KC_W,    KC_E,    KC_R,    KC_T
 #define __QWERTY_L2________________________________ KC_A,    KC_S,    KC_D,    KC_F,    KC_G
-#define __QWERTY_L2_GACS___________________________ HM_A,    HM_S,    HM_D,    HM_F,    KC_G
+#define __QWERTY_L2_GACS___________________________ HM_A,    HM_S,    HM_D,    HM_F,    HM_G
 #define __QWERTY_L3________________________________ KC_Z,    KC_X,    KC_C,    KC_V,    KC_B
-#define __QWERTY_L3_A______________________________ KC_Z,    HM_X,    KC_C,    KC_V,    KC_B
 
 #define __QWERTY_R1________________________________ KC_Y,    KC_U,    KC_I,    KC_O,    KC_P
 #define __QWERTY_R2________________________________ KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN
-#define __QWERTY_R2_SCAG___________________________ KC_H,    HM_J,    HM_K,    HM_L,    HM_SCLN
+#define __QWERTY_R2_SCAG___________________________ HM_H,    HM_J,    HM_K,    HM_L,    HM_SCLN
 #define __QWERTY_R3________________________________ KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLASH
-#define __QWERTY_R3_A______________________________ KC_N,    KC_M,    KC_COMM, HM_DOT,  KC_SLASH
 
 #define __3_KEY_L4_________________________________ KC_ESC, LT(MEDIA, KC_TAB), LT(NAV, KC_ENT)
 #define __3_KEY_R4_________________________________ LT(NUM, KC_SPC), LT(FUNC, KC_BSPC), KC_DEL
@@ -67,7 +86,7 @@
 #define __HHKB_BASE_ROW1___________________________ KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSLS, KC_GRV
 #define __HHKB_BASE_ROW2___________________________ KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSPC
 #define __HHKB_BASE_ROW3___________________________ KC_LCTL, HM_A, HM_S, HM_D, HM_F, KC_G, KC_H, HM_J, HM_K, HM_L, HM_SCLN, KC_QUOT, KC_ENT
-#define __HHKB_BASE_ROW4___________________________ KC_LSFT, KC_Z, HM_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, HM_DOT, KC_SLSH, KC_RSFT, MO(RAISE)
+#define __HHKB_BASE_ROW4___________________________ KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, MO(RAISE)
 #define __HHKB_BASE_ROW5___________________________ KC_LGUI, KC_LALT,  LT(LOWER, KC_SPC), KC_RALT, KC_APP
 
 #define __HHKB_RAISE_ROW1__________________________ _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  KC_F11,  KC_F12,  KC_INS,  KC_DEL
