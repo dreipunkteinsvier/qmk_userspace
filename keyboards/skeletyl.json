@@ -1,0 +1,16 @@
+{
+	"author": "",
+	"documentation": "Wrapper based keymap",
+	"keyboard": "bastardkb/skeletyl/v2/elitec",
+	"keymap": "dreipunkteinsvier",
+	"layout": "LAYOUT_36key_wrapper",
+	"layers": [
+		[ "S42_36(_BASE)" ],
+		[ "S42_36(_NAV)" ],
+		[ "S42_36(_MEDIA)" ],
+		[ "S42_36(_NUM)" ],
+		[ "S42_36(_FUN)" ]
+	],
+	"notes": "",
+	"version": 1
+}
