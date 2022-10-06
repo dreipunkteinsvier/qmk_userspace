@@ -78,7 +78,7 @@
 #define LAYOUT_42key_wrapper(...) LAYOUT_split_3x6_3(__VA_ARGS__)
 
 // 36-key split 3x5_3
-#define LAYOUT_36key_wrapper(...) LAYOUT(__VA_ARGS__)
+#define LAYOUT_36key_wrapper(...) LAYOUT_split_3x5_3(__VA_ARGS__)
 // 42-key to 36-key layout conversion
 #define S42_36(k) SPLIT_3x6_3_TO_3x5_3(k)
 #define SPLIT_3x6_3_TO_3x5_3( \

@@ -13,7 +13,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 #include "dreipunkteinsvier.h"
 
 bool caps_word_press_user(uint16_t keycode) {
@@ -37,6 +36,18 @@ bool caps_word_press_user(uint16_t keycode) {
       return false;  // Deactivate Caps Word.
   }
 }
+
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case HM_F:
+            return TAPPING_TERM - 100; // Recommended
+        case HM_J:
+            return TAPPING_TERM - 100; // Recommended
+        default:
+            return TAPPING_TERM;
+    }
+}
+
 
 #ifdef ENCODER_ENABLE
 bool encoder_update_user(uint8_t index, bool clockwise) {

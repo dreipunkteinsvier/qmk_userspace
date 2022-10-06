@@ -20,7 +20,7 @@
 #include "wrappers.h"
 
 #undef TAPPING_TERM
-#define TAPPING_TERM 180
+#define TAPPING_TERM 200
 #define IGNORE_MOD_TAP_INTERRUPT
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
