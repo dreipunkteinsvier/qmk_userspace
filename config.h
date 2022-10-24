@@ -44,6 +44,7 @@
 #endif
 
 #ifdef COMBO_ENABLE
+    #undef COMBO_TERM
     #define COMBO_TERM 20
     #define COMBO_ONLY_FROM_LAYER 0
 #endif

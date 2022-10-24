@@ -5,7 +5,8 @@
 	"keymap": "dreipunkteinsvier",
 	"layout": "LAYOUT_chiffre_wrapper",
 	"layers": [
-		["_uniBASE"],
+		["_uniQWERTY"],
+		["_uniCOLEMAK"],
 		["_uniNAV"],
 		["_uniMEDIA"],
 		["_uniNUM"],

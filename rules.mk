@@ -45,7 +45,7 @@ ifeq ($(KEYBOARD), crkbd/rev1)
 endif
 
 # le chiffre
-ifeq ($(KEYBOARD), tominabox1/le_chiffre)
+ifeq ($(KEYBOARD), tominabox1/le_chiffre/rev1)
 	ENCODER_ENABLE = yes
 	OLED_ENABLE = yes
 	SRC += chiffre_oled.c

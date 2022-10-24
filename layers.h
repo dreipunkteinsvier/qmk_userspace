@@ -27,16 +27,27 @@
 #define HM_K	LCTL_T(KC_K)
 #define HM_L	LALT_T(KC_L)
 #define HM_SCLN LGUI_T(KC_SCLN)
+
+#define CM_A    LGUI_T(KC_A)
+#define CM_R    LALT_T(KC_R)
+#define CM_S    LCTL_T(KC_S)
+#define CM_T    LSFT_T(KC_T)
+#define CM_G    RALT_T(KC_G)
+#define CM_M    RALT_T(KC_M)
+#define CM_N    RSFT_T(KC_N)
+#define CM_E    LCTL_T(KC_E)
+#define CM_I    LALT_T(KC_I)
+#define CM_O    LGUI_T(KC_O)
+
 #define HM_ESC	LCTL_T(KC_ESC)
-#define GACS(k1,k2,k3,k4) GUI_T(k1),ALT_T(k2),CTL_T(k3),SFT_T(k4)
-#define SCAG(k1,k2,k3,k4) SFT_T(k1),CTL_T(k2),ALT_T(k3),GUI_T(k4)
 
 // layer names
-#define BASE 0
-#define NAV 1
-#define MEDIA 2
-#define NUM 3
-#define FUNC 4
+#define QWERTY 0
+#define COLDH 1
+#define NAV 2
+#define MEDIA 3
+#define NUM 4
+#define FUNC 5
 
 // layer strip
 #define __BLANK_4_________________________ _______, _______, _______, _______
@@ -53,6 +64,16 @@
 #define __QWERTY_R2_SCAG___________________________ HM_H,    HM_J,    HM_K,    HM_L,    HM_SCLN
 #define __QWERTY_R3________________________________ KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLASH
 
+#define __COLEMAK_L1_______________________________ KC_Q,    KC_W,    KC_F,    KC_P,    KC_B
+#define __COLEMAK_L2_______________________________ KC_A,    KC_R,    KC_S,    KC_T,    KC_G
+#define __COLEMAK_L2_GACS__________________________ CM_A,    CM_R,    CM_S,    CM_T,    CM_G
+#define __COLEMAK_L3_______________________________ KC_Z,    KC_X,    KC_C,    KC_D,    KC_V
+
+#define __COLEMAK_R1_______________________________ KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN
+#define __COLEMAK_R2_______________________________ KC_M,    KC_N,    KC_E,    KC_I,    KC_O
+#define __COLEMAK_R2_SCAG__________________________ CM_M,    CM_N,    CM_E,    CM_I,    CM_O
+#define __COLEMAK_R3_______________________________ KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLASH
+
 #define __3_KEY_L4_________________________________ KC_ESC, LT(MEDIA, KC_TAB), LT(NAV, KC_ENT)
 #define __3_KEY_R4_________________________________ LT(NUM, KC_SPC), LT(FUNC, KC_BSPC), KC_DEL
 
@@ -68,7 +89,7 @@
 
 #define __MEDIA_R1_________________________________ RGB_TOG, RGB_MOD,  RGB_HUI, RGB_SAI, RGB_VAI
 #define __MEDIA_R2_________________________________ RGB_M_P, RGB_RMOD, RGB_HUD, RGB_SAD, RGB_VAD
-#define __MEDIA_R3_________________________________ _______, KC_MUTE,  KC_VOLD, KC_VOLU, QK_BOOTLOADER
+#define __MEDIA_R3_________________________________ TO(QWERTY), TO(COLDH), _______, _______, QK_BOOTLOADER
 
 #define __NUM_L1___________________________________ KC_MINS, KC_7,    KC_8,    KC_9,     KC_0
 #define __NUM_L2___________________________________ KC_EQL,  KC_4,    KC_5,    KC_6,     KC_QUOT

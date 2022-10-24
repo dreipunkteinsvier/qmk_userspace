@@ -38,18 +38,21 @@ static void render_layer_status(void) {
     oled_write_P(PSTR("-----"), false);
     switch (get_highest_layer(layer_state)) {
         case 0:
-            oled_write_ln_P(PSTR("BASE"), false);
+            oled_write_ln_P(PSTR("QWRTY"), false);
             break;
         case 1:
-            oled_write_ln_P(PSTR(" NAV"), false);
+            oled_write_ln_P(PSTR("COLDH"), false);
             break;
         case 2:
-            oled_write_ln_P(PSTR(" MED"), false);
-            break;
-        case 3:
             oled_write_ln_P(PSTR(" NAV"), false);
             break;
+        case 3:
+            oled_write_ln_P(PSTR(" MED"), false);
+            break;
         case 4:
+            oled_write_ln_P(PSTR(" NAV"), false);
+            break;
+        case 5:
             oled_write_ln_P(PSTR(" FUN"), false);
             break;
         default:

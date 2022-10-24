@@ -43,11 +43,14 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
             return TAPPING_TERM - 100; // Recommended
         case HM_J:
             return TAPPING_TERM - 100; // Recommended
+        case CM_T:
+            return TAPPING_TERM - 100; // Recommended
+        case CM_N:
+            return TAPPING_TERM - 100; // Recommended
         default:
             return TAPPING_TERM;
     }
 }
-
 
 #ifdef ENCODER_ENABLE
 bool encoder_update_user(uint8_t index, bool clockwise) {
