@@ -45,7 +45,7 @@
 #define QWERTY 0
 #define COLDH 1
 #define NAV 2
-#define MEDIA 3
+#define LIGHT 3
 #define NUM 4
 #define FUNC 5
 
@@ -75,10 +75,10 @@
 #define __COLEMAK_R2_SCAG__________________________ CM_M,    CM_N,    CM_E,    CM_I,    CM_O
 #define __COLEMAK_R3_______________________________ KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLASH
 
-#define __3_KEY_L4_________________________________ KC_ESC, LT(MEDIA, KC_TAB), LT(NAV, KC_ENT)
+#define __3_KEY_L4_________________________________ KC_ESC, LT(LIGHT, KC_TAB), LT(NAV, KC_ENT)
 #define __3_KEY_R4_________________________________ LT(NUM, KC_SPC), LT(FUNC, KC_BSPC), KC_DEL
 
-#define __2_KEY_L4______ LT(MEDIA, KC_TAB), LT(NAV, KC_ENT)
+#define __2_KEY_L4______ LT(LIGHT, KC_TAB), LT(NAV, KC_ENT)
 #define __2_KEY_R4______ LT(NUM, KC_SPC), LT(FUNC, KC_BSPC)
 
 #define __GACS_L2_________________________ KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT
@@ -88,9 +88,11 @@
 #define __NAV_R2__________________________ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
 #define __NAV_R3__________________________ KC_HOME, KC_PGDN, KC_PGUP, KC_END
 
-#define __MEDIA_R1_________________________________ RGB_TOG, RGB_MOD,  RGB_HUI, RGB_SAI, RGB_VAI
-#define __MEDIA_R2_________________________________ RGB_M_P, RGB_RMOD, RGB_HUD, RGB_SAD, RGB_VAD
-#define __MEDIA_R3_________________________________ TO(QWERTY), TO(COLDH), _______, _______, QK_BOOTLOADER
+#define __MEDIA_R1________________________ KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT
+
+#define __LIGHT_R1_________________________________ RGB_TOG, RGB_MOD,  RGB_HUI, RGB_SAI, RGB_VAI
+#define __LIGHT_R2_________________________________ RGB_M_P, RGB_RMOD, RGB_HUD, RGB_SAD, RGB_VAD
+#define __LIGHT_R3_________________________________ TO(QWERTY), TO(COLDH), _______, _______, QK_BOOTLOADER
 
 #define __NUM_L1___________________________________ KC_MINS, KC_7,    KC_8,    KC_9,     KC_0
 #define __NUM_L2___________________________________ KC_EQL,  KC_4,    KC_5,    KC_6,     KC_QUOT

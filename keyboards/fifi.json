@@ -7,7 +7,7 @@
 	"layers": [
 		[ "_BASE" ],
 		[ "_NAV" ],
-		[ "_MEDIA" ],
+		[ "_LIGHT" ],
 		[ "_NUM" ],
 		[ "_FUN" ]
 	],
