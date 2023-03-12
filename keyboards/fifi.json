@@ -5,7 +5,7 @@
 	"keymap": "dreipunkteinsvier",
 	"layout": "LAYOUT_42key_wrapper",
 	"layers": [
-		[ "_BASE" ],
+		[ "_QWERTY" ],
 		[ "_NAV" ],
 		[ "_LIGHT" ],
 		[ "_NUM" ],

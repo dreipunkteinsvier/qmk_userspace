@@ -25,6 +25,11 @@
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
+#ifdef MASTER_RIGHT
+    #undef MASTER_RIGHT
+    #define MASTER_LEFT
+#endif
+
 #ifdef RGBLIGHT_ENABLE
     #undef RGBLIGHT_ANIMATIONS
     #undef RGBLIGHT_LIMIT_VAL
